@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saturno Tre</title>
+    </head>
+    <style>
+        .titolo{
+            text-align: center;
+            font-family: cursive;
+            font-size: 1.5rem;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: black;
+        }
+
+        .card {
+            position: relative;
+            width: 220px;
+            margin: 0 auto; /* centramento */
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color:white;
+        }
+        
+        .card:hover {
+            transform: scale(1.02); /* leggero ingrandimento al passaggio */
+        }
+        
+        .card .descrizione {
+            position: absolute;
+            bottom: 0;
+            color: black;
+            background-color:white;
+            width: 220px;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            font-weight: bold;
+            border:2px solid black;
+            border-radius: 10px 5px 10px;
+        }
+        
+        .card:hover .descrizione {
+            opacity: 1;
+        }
+        .indirizzo{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <body>
+        <h3>Saturno Tre- Steve Gallagher</h3>
+        <div class="card">
+            <img src="./static/saturnotre.jpg">
+            <div class="descrizione">Saturno Tre</div>
+            <p>
+                Trama:
+
+                Gli abitanti di due stazioni spaziali sono minacciati 
+                da uno scienziato e la sua amante androide. 
+                Il robot viene smontato, ma trova ben presto il modo di 
+                rimettere di nuovo insieme le parti nel giusto ordine e 
+                continuare così la sua ricerca.
+            </p>
+            <br>
+            <p>
+                Dettagli:
+
+                Anno 1980
+                Grandezza normale
+                Catena Urania
+                Peso 110g
+                Pagine 153
+            </p>
+
+            <footer class="indirizzo">
+                Instagram Personale: _gabriele.ricca
+                Facebook: Gabry Rich
+            </footer>
+        </div>
+    </body>
+</html>

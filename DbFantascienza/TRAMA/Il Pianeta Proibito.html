@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IL Pianeta Proibito</title>
+    </head>
+    <style>
+        .titolo{
+            text-align: center;
+            font-family: cursive;
+            font-size: 1.5rem;
+            color: red;
+        }
+        p{
+            text-align: left;
+            color: black;
+        }
+        img{
+            width: 280px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 15px 15px 15px;
+            justify-content: center;
+            grid: 15px;
+        }
+
+        .card {
+            position: relative;
+            width: 280px;
+            margin: 0 auto; /* centramento */
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color:white;
+        }
+        
+        .card:hover {
+            transform: scale(1.02); /* leggero ingrandimento al passaggio */
+        }
+        
+        .card .descrizione {
+            position: absolute;
+            bottom: 0;
+            color: black;
+            background-color:white;
+            width: 280px;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            font-weight: bold;
+            border:2px solid black;
+            border-radius: 10px 5px 10px;
+        }
+        
+        .card:hover .descrizione {
+            opacity: 1;
+        }
+        .indirizzo{
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+    <body>
+        <h3 class="titolo">IL Pianeta Proibito- W. J. Stuart</h3>
+        <div class="card">
+            <div class="descrizione">IL Pianeta Proibito</div>
+            <img src="./static/pianetaproibito.jpg">
+            
+        </div>
+        <br>
+        <p>
+                Trama:<br>
+
+                Un'astronave viaggia nello spazio verso il pianeta chiamato Altair<br>
+                IV per scoprire cosa sia successo a un gruppo di scienziati spariti<br>
+                durante una spedizione avvenuta anni prima.<br>
+                Quando il comandante Adams e la sua truppa arrivano,<br> 
+                scoprono che ne sono rimasti solo due,<br>
+                che pian piano raccontano la verità.<br>
+
+            </p>
+            <p>
+                Dettagli:<br>
+
+                Anno 1977<br>
+                Pagine 240 pg<br>
+                Grandezza normale<br>
+                Catena urania<br>
+            </p>
+        <br>
+
+        <footer class="indirizzo">
+                Instagram Personale: _gabriele.ricca<br>
+                Instagram :fan_tascienza<br>
+                Facebook: Gabry Rich
+        </footer>
+    </body>
+</html>

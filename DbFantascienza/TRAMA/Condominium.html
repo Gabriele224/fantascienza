@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Condominium</title>
+    </head>
+    <style>
+        .titolo{
+            text-align: center;
+            font-family: cursive;
+            font-size: 1.5rem;
+            color: red;
+        }
+        p{
+            text-align: left;
+            color: black;
+        }
+        img{
+            width: 280px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 15px 15px 15px;
+            justify-content: center;
+            grid: 15px;
+        }
+
+        .card {
+            position: relative;
+            width: 280px;
+            margin: 0 auto; /* centramento */
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color:white;
+        }
+        
+        .card:hover {
+            transform: scale(1.02); /* leggero ingrandimento al passaggio */
+        }
+        
+        .card .descrizione {
+            position: absolute;
+            bottom: 0;
+            color: black;
+            background-color:white;
+            width: 280px;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            font-weight: bold;
+            border:2px solid black;
+            border-radius: 10px 5px 10px;
+        }
+        
+        .card:hover .descrizione {
+            opacity: 1;
+        }
+        .indirizzo{
+            background-color: black;
+            color: white;
+        }
+
+        
+    </style>
+    <body>
+        <h3 class="titolo">Condominium- J. G. Ballard</h3>
+        <div class="card">
+            <div class="descrizione">Condominium</div>
+            <img src="./static/condominium.jpg">
+            
+        </div>
+        <br>
+        <p>
+                Trama:<br>
+                Ognuno è proprietario del singolo appartamento,  e proprietario di scale ,<br>
+                ingresso ,tetto eccetera.<br>
+                Ognuno di loro sa che le cose vanno come sembra neanche quando il <br>
+                condominio sia limitato a una 20 di appartamenti.<br>
+
+            </p>
+            <p>
+                Dettagli:<br>
+                Anno 1976<br>
+                Pagine 154<br>
+                Grandezza normale<br>
+                Mondo Urania<br>
+                
+            </p>
+        <br>
+
+        <footer class="indirizzo">
+                Instagram Personale: _gabriele.ricca<br>
+                Instagram :fan_tascienza<br>
+                Facebook: Gabry Rich
+        </footer>
+    </body>
+</html>

@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 from PIL import Image
 import base64 ,re
 
-st.title("Benvenuti nella Fantascienza")
+st.title("Universi da Leggere")
 
 def encode_image_to_base64(img_path):
     with open(img_path, "rb") as image_file:

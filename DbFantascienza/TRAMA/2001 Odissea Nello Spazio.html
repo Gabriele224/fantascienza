@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2001 Odissea Nello Spazio</title>
+    </head>
+    <style>
+        .titolo{
+            text-align: center;
+            font-family: cursive;
+            font-size: 1.5rem;
+            color: red;
+        }
+        p{
+            text-align: left;
+            color: black;
+        }
+        img{
+            width: 280px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 15px 15px 15px;
+            justify-content: center;
+            grid: 15px;
+        }
+
+        .card {
+            position: relative;
+            width: 280px;
+            margin: 0 auto; /* centramento */
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color:white;
+        }
+        
+        .card:hover {
+            transform: scale(1.02); /* leggero ingrandimento al passaggio */
+        }
+        
+        .card .descrizione {
+            position: absolute;
+            bottom: 0;
+            color: black;
+            background-color:white;
+            width: 280px;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            font-weight: bold;
+            border:2px solid black;
+            border-radius: 10px 5px 10px;
+        }
+        
+        .card:hover .descrizione {
+            opacity: 1;
+        }
+        .indirizzo{
+            background-color: black;
+            color: white;
+        }
+
+        
+    </style>
+    <body>
+        <h3 class="titolo">2001 Odissea Nello Spazio</h3>
+        <div class="card">
+            <div class="descrizione">2001 Odissea Nello Spazio- Arthur Clarke</div>
+            <img src="./static/2001odisseanellospazio.jpg">
+            
+        </div>
+        <br>
+        <p>
+                Trama:<br>
+                la scoperta di un misterioso monolite nero sulla Luna, <br>
+                un artefatto di origine extraterrestre che emette un segnale verso Saturno. <br>
+                La trama segue la missione della nave spaziale Discovery, <br>
+                inviata a indagare sul segnale, e le avventure del suo equipaggio, <br>
+                tra cui il computer HAL 9000, che si rivela essere più umano del previsto. <br>
+                Il viaggio porta a Giove e oltre, dove l'astronauta David Bowman vive un'esperienza <br>
+                trasformativa, incontrando entità superiori e compiendo una sorta di rinascita cosmica. <br>
+
+
+
+            </p>
+            <p>
+                Dettagli:<br>
+                
+                Anno prima uscita 1968
+                Pagine nuova edizione 192
+                Grandezza del Libro normale
+                Trovabile presso I punti vendita anche la vecchia edizione
+            </p>
+        <br>
+
+        <footer class="indirizzo">
+                Instagram Personale: _gabriele.ricca<br>
+                Instagram :fan_tascienza<br>
+                Facebook: Gabry Rich
+        </footer>
+    </body>
+</html>

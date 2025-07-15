@@ -24,6 +24,8 @@ def embed_images_in_html(html_content, base_folder):
 
 PATH_HTML_TRAMALIBRI="./DbFantascienza/TRAMA"
 
+PATH_HTML_VITASCRITTORI="./DbFantascienza/VITASCRITTORI"
+
 st.write("Trama dei Libri Fantascientifici")
 
 html_pages_trama = [file for file in os.listdir(PATH_HTML_TRAMALIBRI) if file.endswith(".html")]
@@ -43,6 +45,30 @@ if st.button("Ricerca Libro", box_html_tramalibri):
 
         contenuto= file.read()
     contenuto = embed_images_in_html(contenuto, PATH_HTML_TRAMALIBRI)
+    components.html(contenuto, height=600, scrolling=True)
+else:
+    st.write("\n")
+
+
+st.write("Vita Degli Scrittori")
+
+html_pages_Scrittori = [file for file in os.listdir(PATH_HTML_VITASCRITTORI) if file.endswith(".html")]
+
+# Mostra nel menu solo il nome senza estensione
+display_names_scrittori = [os.path.splitext(f)[0] for f in html_pages_Scrittori]
+
+box_html_scrittori= st.selectbox("Seleziona lo scrittore\n", display_names_scrittori)
+
+if st.button("Ricerca Scrittore", box_html_scrittori):
+
+    # Ricostruisci il nome completo del file
+    selected_file = box_html_scrittori + ".html"
+
+    file_path= os.path.join(PATH_HTML_VITASCRITTORI,selected_file)
+    with open(file_path, "r+", encoding="utf-8") as file:
+
+        contenuto= file.read()
+    contenuto = embed_images_in_html(contenuto, PATH_HTML_VITASCRITTORI)
     components.html(contenuto, height=600, scrolling=True)
 else:
     st.write("\n")
